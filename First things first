@@ -1,0 +1,61 @@
+What is homebrew? It's a package manager. In other words is a "painless way" to install anything on Mac
+
+Always install Homebrew in your Mac. Copy the command from https://brew.sh/
+
+    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+Now that homebrew is installed let's test it out. 
+
+    $ brew 
+    
+   It should list out some basic default syntax of brew
+   
+ 
+Next we go ahead and install iterm2. This is a interactive Mac terminal alternate. 
+    
+     $ brew install --cask iterm2
+
+Other tools for Development
+
+    $ brew install --cask visual-studio-code
+    
+    $ brew install --cask alfred
+    
+    $ brew install --cask spotify
+    
+    $ brew install --cask evernote
+    
+    $ brew install --cask docker (this installs the complete docker desktop and you can enable kubernetes engine from within Docker Desktop)
+    
+    
+
+Now adding some colours to the boring Terminals. 
+
+Someone was generous enough for us to actually create a Git repo about the best colours and we can just use them 
+
+    $ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+    
+Saving it with the name of your machine 
+
+    $ code reshu.itermcolors
+
+Most importantly install Git. 
+
+    $ brew install git
+    
+    This is just basic Git tools. To install GitHub Desktop 
+    
+    $ brew install --cask github
+    
+Managing our Terminal Shell with OhMyZsh!!!
+
+    $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"\n\n
+    
+    $ code .zshrc
+    
+    $ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions\n\n
+    
+    
+
+    
+
